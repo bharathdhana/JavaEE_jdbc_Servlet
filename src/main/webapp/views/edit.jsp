@@ -15,7 +15,7 @@
 <body>
 
 
-<bet:setDataSource var="bharath" driver="com.mysql.cj.jdbc.Driver" url="mysql-744eeba-bharathdhanavan2612-cb02.b.aivencloud.com" user="avnadmin" password="AVNS_ceFEcw6rbutZvpVoxgG" />
+<bet:setDataSource var="bharath" driver="com.mysql.cj.jdbc.Driver" url="mysql-744eeba-bharathdhanavan2612-cb02.b.aivencloud.com" user="avnadmin" password="{DB-PASSWORD}" />
     <bet:query var = "extracted" datasource="${bharath}" sql="select * from offers where offer_id=?">
         <bet:param value="${param.key}" />
     </bet:query>
